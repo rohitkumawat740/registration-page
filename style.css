@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: #3c82f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.form-box{
+    background: white;
+    padding: 25px;
+    width: 380px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(4%);
+}
+.form-box h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-box form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.form-box:nth-child(2){
+    transform: translateY(-0%);
+    padding: 30px;
+}
+.form-box form input{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+.password-wrapper{
+    position: relative;
+}
+.eye-icon{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+.forgot{
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #3b82f6;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+.btn{
+    width: 100%;
+    padding: 12px;
+    background: #0076dc;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.form-box p{
+    text-align: center;
+    font-size: 14px;
+    margin: 10px 0;
+}
+.form-box p a{
+    color: #3b82f6;
+    text-decoration: none;
+}
+.or-line{
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+.or-line span{
+    flex: 1;
+    text-align: center;
+    color: #888;
+    position: relative;
+}
+.or-line span::before,
+.or-line span::after{
+    content: '';
+    height: 1px;
+    background: #ccc;
+    position: absolute;
+    top: 50%;
+    width: 140px;
+}
+.or-line span::before{
+    left: -2px;
+}
+.or-line span::after{
+    right: -2px;
+}
+.social-btn{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    gap: 80px;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background: #f4f4f4;
+}
+.fb{
+    background: #3b5998;
+    color: white;
+    border: none;
+    text-align: center;
+}
+.google{
+    background: white;
+    color: #444;
+    
+}
+.social-btn img{
+    width: 20px;
+}
+
